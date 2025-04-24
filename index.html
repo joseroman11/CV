@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hoja de Vida </title>
+</head>
+<body>
+
+    <div class="container-lg my-5">
+
+        <div class="row shadow-lg rounded-4 overflow-hidden">
+            
+            <!--columna de la Izquierda -->
+            <div class="col-md-4 bg-primary text-white p-4">
+                <header class="text-center mb-4">
+                    <img src="data:image/png;base64,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"
+                    alt="Foto de Perfil"
+                    width="280"
+                    class="img-fluid rounded-circle border border-4 border-white mb-3"
+                    >
+                    <h1>Jose Roman Maturana Andrade</h1>
+                    <h2>Desarrollador Web</h2>
+                    
+    
+                </header>
+                <section class="mb-4">
+                    <h3 class="h5 fw-bold mb-3">  <i class=""></i></h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa fa-phone me-2"></i>+57 300 000 0000
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope me-2"></i>jhoseroman999@gmail.com
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt me-2"></i>Colombia, Manizales
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin me-2"></i>Jose/Maturana.in
+                        </li>
+                        <li>
+                            <i class="fab fa-github me-2"></i>github.com/joseroman11
+                        </li>
+                        
+                    </ul>
+                    
+
+
+                </section>
+                <section class="mb-4">
+                    <h3 class="h5 fw-bold mb-3"><i class="fas fa-code me-2"></i>Habilidades</h3>
+                    <div class="d-flex justify-content-between">
+                        <span>HTML/CSS</span>
+                        <span>95%</span>
+
+                    </div>
+                    <div class="progress" style="height: 8px;">
+
+
+                        <div class="progress-bar bg-white" role="progressbar"style="width: 95%;"></div>
+                    </div>
+
+                
+                    <div class="d-flex justify-content-between">
+                        <span>JavaScricpt</span>
+                        <span>65%</span>
+
+                    </div>
+                    <div class="progress" style="height: 8px;">
+
+
+                        <div class="progress-bar bg-white" role="progressbar"style="width: 65%;"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <span>REACT</span>
+                        <span>65%</span>
+
+                    </div>
+                    <div class="progress" style="height: 8px;">
+
+
+                        <div class="progress-bar bg-white" role="progressbar"style="width: 65%;"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <span>Node.js</span>
+                        <span>50%</span>
+
+                    </div>
+                    <div class="progress" style="height: 8px;">
+
+
+                        <div class="progress-bar bg-white" role="progressbar"style="width: 50%;"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <span>Git & Github</span>
+                        <span>75%</span>
+
+                    </div>
+                    <div class="progress" style="height: 8px;">
+
+
+                        <div class="progress-bar bg-white" role="progressbar"style="width: 75%;"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <span>APIs REST</span>
+                        <span>65%</span>
+
+                    </div>
+                    <div class="progress" style="height: 8px;">
+
+
+                        <div class="progress-bar bg-white" role="progressbar"style="width: 65%;"></div>
+                    </div>
+
+
+
+                </section> 
+    
+    
+    
+                
+                
+            </div >
+        
+            
+
+
+
+
+            <!-- columna de la Derecha -->
+            <div class="col-md-8 border-0 shadow-sm p-4">
+                <h3 class="fw-bold text-primary mb-4">
+                    <i class="fas fa briefcase me-1" ></i>
+                    Experiencia Laboral
+                </h3>
+                <section class="mb-5">
+                    
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">
+                                Desarrollador
+                            </h4>
+                            <h5 class="card-subtitle mb-2 text-muted small">
+                                2022 -Actualidad
+                            </h5>
+                            <h6 class="text-primary">Proyectos Personales</h6>
+                            <ul class="mt-3">
+                                <li>Aplicación web para rutas de buses con cámaras térmicas y predicción de llegada.</li>
+                                <li>Tecnologías usadas: HTML,CSS,JavaScricpt, Python, Firebase.</li>
+                                <li>Integración de mapas y tiempo real mediante APIs.</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">
+                                Proyecto Freelance - Página web para Estilista
+                            </h4>
+
+                            <h5 class="card-title fw-bold">
+                                Cliente: Luz Estela
+                            </h5>
+                            <h5 class="card-subtitle mb-2 text-muted small">
+                                Marzo 2025 - Abril 2025
+                            </h5>
+                            
+                            <h6 class="text-primary">Desarrollo web Freelance </h6>
+                            <ul class="mt-3">
+                                <li>Desarrollo de una página web informativa para promocionar servicios de trenzando profesional.</li>
+                                <li>Diseño responsivo adaptado a móviles, con galeria de imágenes, sección de contacto y mapas de ubicación.</li>
+                                <li>Tecnolñogias utilizadas: HTML, CSS, JavaScricpt</li>
+                                <li>Optimización básica para motores de búsqueda (SEO)</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                
+                    
+                </section>
+
+                <section class="mb-5">
+                    <h4 class="fw-bold text-primary mb-4">
+                        <i class="fas fa-graduation-cap me-2"></i>
+                        Educacion
+                    </h4>
+
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">
+                                Universidad de Caldas- Ingeniería Informática
+
+                            </h4>
+                            <h5 class="card-subtitle mb-2 text-muted small">
+                                2022 - Actual
+                            </h5>
+                            <h6 class="text-primary">
+                                Cursos Complementarios
+                            </h6>
+                            <ul>
+                                <li>Curso JavaScricpt en Platzi</li>
+                                <li>Certificación PHP con el SENA</li>
+                                <li>Bootcamp Programación - Ministerio de las Tic</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+                
+            
+                
+                
+                
+            </div> 
+
+        </div>
+
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
